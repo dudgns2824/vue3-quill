@@ -116,7 +116,7 @@ export default {
         // Instance
         state.quill = new Quill(editor.value, state.editorOption)
         // console.log('intilized')
- Z
+
         // Set editor content
 /*        if (props.value) {
           state.quill.pasteHTML(props.value)
