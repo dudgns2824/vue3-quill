@@ -64,7 +64,7 @@ export default {
         if (state.quill) {
           if (val && val !== _content) {
             _content = val
-            state.quill.pasteHTML(val)
+            // state.quill.pasteHTML(val)
           } else if (!val) {
             state.quill.setText('')
           }
@@ -78,9 +78,9 @@ export default {
         if (state.quill) {
           if (val && val !== _content) {
             _content = val
-            state.quill.pasteHTML(val)
+            /*state.quill.pasteHTML(val)*/
           } else if (!val) {
-            state.quill.setText('')
+            /*state.quill.setText('')*/
           }
         }
       }
@@ -116,11 +116,11 @@ export default {
         // Instance
         state.quill = new Quill(editor.value, state.editorOption)
         // console.log('intilized')
-
+ Z
         // Set editor content
-        if (props.value) {
+/*        if (props.value) {
           state.quill.pasteHTML(props.value)
-        }
+        }*/
 
         // Mark model as touched if editor lost focus
         state.quill.on('selection-change', range => {
